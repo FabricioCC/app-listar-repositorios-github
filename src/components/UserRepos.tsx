@@ -10,6 +10,7 @@ interface user{
 
 interface repos {
     name: string,
+    description: string,
     language: string,
     stargazers_count: string,
     license: {
@@ -36,7 +37,7 @@ function UserRepos(props: user) {
                     
                     <a href={repo.html_url} >
                         <Card className="card" title={repo.name} style={{width: 250, margin: 10}}>
-                        
+                            <p>{`Descricao: ${!repo.description ? "Não possui" : repo.description} `}</p>
                             <p>{`Linguagem principal: ${repo.language}`}</p>
                             <p>{`Estrelas: ${repo.stargazers_count}`}</p>
                             <p>{ `Licensa: ${!repo.license ? "Não possui" : repo.license.name}`}</p>
