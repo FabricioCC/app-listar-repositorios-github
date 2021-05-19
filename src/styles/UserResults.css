@@ -1,0 +1,19 @@
+.container{ 
+    display: grid;
+    min-height: 100vh;
+    height: 100%;
+    place-items: center;
+}
+
+.body{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 99vw;
+}
+
+@media (max-width: 600px){
+    .body{
+        flex-direction: column;
+    }
+}
