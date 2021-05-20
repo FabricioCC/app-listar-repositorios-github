@@ -2,6 +2,8 @@ import React from 'react'
 import {Avatar} from 'antd'
 import "../styles/UserDetails.css"
 
+
+//tipo usuario a ser carregado
 interface user {
     name: string,
     avatar_url: string,
@@ -22,9 +24,10 @@ function UserDetails(data: user) {
 
 
     return (
+        //acessa o data e preenche a página 
         <div className="UserDetails_container">
             <div className="user_avatar">
-                <Avatar size={256} src={data?.avatar_url} />
+                <Avatar size={256} src={data?.avatar_url} /> 
                 <h2>{name} </h2>
             </div>
             

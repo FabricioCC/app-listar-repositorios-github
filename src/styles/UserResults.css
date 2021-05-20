@@ -5,11 +5,46 @@
     place-items: center;
 }
 
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #F0FFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.error-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: lightskyblue;
+    font-size: 1.2em;
+    color: black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.error-container button:hover{
+    background-color: lightsteelblue;
+    transition: 1s;
+}
+
 .body{
     display: flex;
     flex: 1;
     height: 100%;
     width: 99vw;
+}
+
+.link-home{
+    width: 30px;
+    height:10vh;
+    margin: 5px;
+    margin-top: 20px
 }
 
 @media (max-width: 600px){
