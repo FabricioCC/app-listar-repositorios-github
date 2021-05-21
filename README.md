@@ -1,10 +1,10 @@
-### App React para buscar usuários e listar repositorios
+# App React para buscar usuários e listar repositorios
 
 Use o comando "npm install" para instalar os pacotes usados no projeto
 
 Em seguida "npm start" para rodar a aplicação
 
-# Estratégia de desenvolvimento
+### Estratégia de desenvolvimento
 
 
 Primeiramente, vi o funcionamento da api do github, como ela retornava os dados do usuario, os repositorios e outras informações.
@@ -24,7 +24,7 @@ Depois disso, vi como retornar pra o usuário caso os dados ainda tivessem carre
 Quando consegui carregar os dados, passei a listar os repositorios e terminar as páginas. Usei alguns componentes da biblioteca AntD, e fiz mais algumas estilizações.
 
 
-# Dificuldades encontradas
+### Dificuldades encontradas
 
 1- Fazer a navegação utilizando o react router, tava ocorrendo um erro que fazia com que a home ('/') ficasse sobre as outras rotas. Para resolver tive que passar como 
 parâmetro na home {exact={true}} e corrigiu o erro.
