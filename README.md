@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+###App React para buscar usuários e listar repositorios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Use o comando "npm install" para instalar os pacotes usados no projeto
 
-## Available Scripts
+Em seguida "npm start" para rodar a aplicação
 
-In the project directory, you can run:
+#Estratégia de desenvolvimento
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Primeiramente, vi o funcionamento da api do github, como ela retornava os dados do usuario, os repositorios e outras informações.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Em seguida, pensei em como estruturar o projeto, então pesquisei sobre o react router, e usei ele para criar as rotas e iniciar as paginas do projeto
 
-### `yarn test`
+Após isso, comecei a desenvolver as paginas, só a estrutura do front end mesmo, então revi alguns conceitos de estilização e apliquei nas paginas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Depois, já comecei a pesquisar como carregar os dados da api na minha aplicação, entao descobri uma ferramente bem útil, que foi o useSWR,
+que permitiu fazer as requesições e verificar se houve erros.
 
-### `yarn build`
+Após isso comecei a carregar os dados que recebia da api nas paginas, também pesquisei como receber os parâmetros da url, e fazer a requesicao na api
+de acordo com o parâmetro passado pelo usuario
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Depois disso, vi como retornar pra o usuário caso os dados ainda tivessem carregando ou caso não exista usuário.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Quando consegui carregar os dados, passei a listar os repositorios e terminar as páginas. Usei alguns componentes da biblioteca AntD, e fiz mais algumas estilizações.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+#Dificuldades encontradas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1- Fazer a navegação utilizando o react router, tava ocorrendo um erro que fazia com que a home ('/') ficasse sobre as outras rotas. Para resolver tive que passar como 
+parâmetro na home {exact={true}} e corrigiu o erro.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2- Erro ao carregar vários cards, tive que resolver reformatando a forma como passava os dados obtidos na requisição para serem exibidos na pagina.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
