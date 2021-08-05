@@ -4,6 +4,10 @@ Use o comando "npm install" para instalar os pacotes usados no projeto
 
 Em seguida "npm start" para rodar a aplicação
 
+# Funcionalidades
+- Pesquisar usuario no github
+- Acessar o perfil, incluindo nome, bio, imagem e repositorios
+
 ### Estratégia de desenvolvimento
 
 

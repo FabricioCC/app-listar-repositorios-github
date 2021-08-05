@@ -50,6 +50,8 @@
 }
 
 .user_statistics p {
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
     font-size: 1.2em;
     width: 100%;
